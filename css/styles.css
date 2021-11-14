@@ -34,26 +34,29 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em
+    letter-spacing: 0.03em;
     color: var(--light-blue-color);
 }
 .header-logo {
     color: var(--logo-color);
 }
-.header-link-email, .header-link-tel {
+.header-link-email {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--grey-color);
+    color: var(--light-blue-color);
+}
+.header-link-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--light-grey-color);
 }
 .header-link-email:hover,
 .header-link-email:focus {
-    color: var(--light-blue-color);
-}
-.header-link-tel:hover,
-.header-link-tel:focus {
-    color: var(--light-blue-color);
+    color: var(--light-grey-color);
 }
 .header-link {
     color: var(--grey-color);
@@ -66,15 +69,22 @@ body {
 .header-link:focus {
     color: var(--light-blue-color);
 }
-.header-link {
+.header-link-current:hover,
+.header-link-current:focus {
+    color: var(--grey-color);
+}
+.header-link-current {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--logo-color);
+    color: var(--light-blue-color);
 }
 .link, .header-link:current {
     color: var(--light-blue-color);
+}
+.header-link-current:current {
+    color: var(--grey-color);
 }
 .hero,
 .footer {
@@ -86,36 +96,39 @@ body {
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
     color: var(--white-color);
 }
 .hero-button {
     cursor: pointer;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
-    background-color: var(--light-blue-color);
-    font-weight: 700
+    background-color: #188CE8;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+    color: white;
 }
 .hero-button:hover {
-    background-color:#188CE8;
+    background-color:var(--light-blue-color);
     font-weight: bold;
     color: #FFFFFF;
 }
 .about-us,
-.activities, {
-    background-color: #E5E5E5;
+.activities {
+    background-color: #E5E5E5; 
 }
 .about-us-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    color: var(--third-title-color);
+    text-transform: uppercase;
+    color: var(--grey-color);
 }
 .about-us-text {
     font-size: 14px;
     line-height: 1.71;
-    color: var(--main-text-color);
+    color: var(--light-grey-color);
 }
 .activities-title {
     font-weight: 700;
@@ -124,25 +137,25 @@ body {
     line-height: 1.17;
 }
 .our-team {
-    background-color: var(--fouth-background-color);
+    background-color: var(--second-white-color);
 }
 .our-team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    color: var(--second-title-color);
+    color: var(--grey-color);
 }
 .our-team-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    color: var(--third-title-color);
+    color: var(--grey-color);
 }
 .our-team-subtext {
     font-size: 16px;
     line-height: 1.19;
-    color: var(--main-text-color);
+    color: var(--light-grey-color);
 }
 .footer-link-logo {
     text-decoration: none;
@@ -150,7 +163,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em
+    letter-spacing: 0.03em;
     color: var(--light-blue-color);
 }
 .footer-logo {
@@ -160,10 +173,6 @@ body {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
-}
-.contacts-footeer-link:hover,
-.contacts-footeer-link:focus{
     color: var(--white-color);
 }
 .contacts-footeer-link-mail,
@@ -173,22 +182,15 @@ body {
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
 }
-.contacts-footeer-link-mail:hover,
-.contacts-footeer-link-mail:focus {
-    color: var(--white-color);
-}
-.contacts-footeer-link-tel:hover,
-.contacts-footeer-link-tel:focus {
-    color: var(--white-color);
-}
 .works-button {
+    font-family: "Roboto", sans-serif;
     cursor: pointer;
     background-color: var(--second-white-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    color: var(--second-title-color);
+    color: var(--grey-color);
 }
 .works-button:hover,
 .works-button:focus {
